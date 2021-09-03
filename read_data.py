@@ -41,6 +41,7 @@ class Language:
     def processTrainingText(self):
         rex = re.compile(r'\W+')
         trainingTextCollapsed = rex.sub(" ", self.trainingText)
+        trainingTextCollapsed = trainingTextCollapsed.lower()
         # construct map of all letters used:
         d = dict()
 
@@ -85,10 +86,6 @@ class Language:
         print(self.wordLengthMap)
 
     def compareToOtherLanguages(self, otherLanguages):
-        def getImportanceOfKey(key):
-            if key.contains("wordLength"):
-                return 5
-            return 1
 
         def getAllKeysFromFingerprints(fingerprints):
             keyDict = dict()
@@ -107,7 +104,7 @@ class Language:
                 return _relDistance(fp1[key], fp2[key])
 
         def inifinity():
-            return 10
+            return 1000
 
         # set up scoring:
         languageScoring = dict()
@@ -118,15 +115,17 @@ class Language:
             [self.fingerprint, *(list(map(lambda l: l.fingerprint, otherLanguages)))])
         allKeyLangScores = dict.fromkeys(allKeys)
         for key in allKeys:
+            # print("\n\n" + key)
             keyLangScores = dict()
             for l in otherLanguages:
-                dis = relDistance(self.fingerprint, l.fingerprint, key)
-                keyLangScores[l.language] = 1/dis
+                score = 1/relDistance(self.fingerprint, l.fingerprint, key)
+                keyLangScores[l.language] = score
+                # print(
+                # f"{key}    self: {str(self.fingerprint[key]) if (key in self.fingerprint) else 'NA'}    {l.language}: {str(l.fingerprint[key]) if (key in l.fingerprint) else 'NA'}   (score: {score}")
             # norm sum of all keyLangScores to 1:
             distSum = 0
             for d in keyLangScores:
                 distSum += keyLangScores[d]
-
             for d in keyLangScores:
                 keyLangScores[d] /= distSum
             allKeyLangScores[key] = keyLangScores
@@ -134,7 +133,30 @@ class Language:
         for key in allKeyLangScores:
             for lang in languageScoring:
                 languageScoring[lang] += allKeyLangScores[key][lang]
-        prettyprint(allKeyLangScores)
+        # normalize between 0 and 1
+        scores = [languageScoring[k] for k in languageScoring]
+        minscore = min(scores)
+        maxscore = max(scores)
+        for k in languageScoring:
+            languageScoring[k] -= minscore
+            if(maxscore-minscore > 0):
+                languageScoring[k] /= maxscore-minscore
+        # # output scoring:
+        # with open('output.json', 'w') as f:
+        #     json.dump(languageScoring, f)
+
+        # create ranking:
+        ranking = [(key, languageScoring[key]) for key in languageScoring]
+        ranking.sort(key=lambda tuple: tuple[1], reverse=True)
+        return ranking
+
+
+def printRanking(ranking):
+    space = 20
+    s = f"\n{'Language'.ljust(space)}{'Score'.ljust(space)}\n"
+    for lang, score in ranking:
+        s += f"{lang.ljust(space)}{str(score).ljust(space)}\n"
+    print(s)
 
 
 def main():
@@ -149,8 +171,13 @@ def main():
     for l in languagesList:
         l.readSourcePathIn()
     # define own language
-    l = Language.fromText("Vamos a la playa los amigos despacito")
-    l.compareToOtherLanguages(languagesList)
+    testText = """
+Het Solow Building, ook bekend als 9 West 57th Street, is een wolkenkrabber in New York City, Verenigde Staten. Het gebouw is 210 meter hoog en telt 49 verdiepingen. Het modernistische katoorgebouw[1] heeft een oppervlakte van 130.064 vierkante meter en staat op 9 West 57th Stre
+
+"""
+    l = Language.fromText(testText)
+    ranking = l.compareToOtherLanguages(languagesList)
+    printRanking(ranking)
 
 
 if __name__ == '__main__':
