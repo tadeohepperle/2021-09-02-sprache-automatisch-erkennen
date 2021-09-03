@@ -12,9 +12,9 @@ const print = console.log;
 
 class FingerprintObject {
   fingerprint = {};
-  lanugage = "UNKNOWN";
-  constructor(lanugageName, trainingText) {
-    this.lanugage = lanugageName;
+  language = "UNKNOWN";
+  constructor(languageName, trainingText) {
+    this.language = languageName;
     this.fingerprint = FingerprintObject.fromText(trainingText);
   }
 
@@ -61,9 +61,10 @@ class FingerprintObject {
       return num2 > num1 ? num2 / num1 : num1 / num2;
     }
     function relDistance(fp1, fp2, key) {
-      if (!(key in fp1) || !(key in fp2) || fp1[key] || fp2[key]) {
+      if (!(key in fp1) || !(key in fp2) || fp1[key] == 0 || fp2[key] == 0) {
         return INFINITY;
-      } else return _relDistance(fp1[key], fp2[key]);
+      }
+      return _relDistance(fp1[key], fp2[key]);
     }
     // set up scoring:
     let languageScoring = {};
@@ -72,14 +73,15 @@ class FingerprintObject {
     }
     // for every key calculate scores:
     let allKeys = getAllKeysFromFingerprints([
-      this,
+      this.fingerprint,
       ...otherFingerprintObjects.map((o) => o.fingerprint),
     ]);
     let allKeyLangScores = {};
-    for (let key in allKeys) {
+    for (let key of allKeys) {
       let keyLangScores = {};
       for (let fp of otherFingerprintObjects) {
         let score = 1 / relDistance(this.fingerprint, fp.fingerprint, key);
+        //print(key, fp.language, score);
         keyLangScores[fp.language] = score;
       }
       // norm sum of all keyLangScores to 1:
@@ -92,6 +94,7 @@ class FingerprintObject {
       }
       allKeyLangScores[key] = keyLangScores;
     }
+    //print(allKeyLangScores);
     // aggregate scores for each language
     for (let k in allKeyLangScores) {
       for (let l in languageScoring) {
@@ -111,7 +114,7 @@ class FingerprintObject {
       k,
       languageScoring[k],
     ]);
-    ranking.sort((a, b) => a[1] - b[1]);
+    ranking.sort((a, b) => b[1] - a[1]);
     return ranking;
   }
 }
@@ -119,7 +122,15 @@ class FingerprintObject {
 export async function main() {
   const LANGUAGES = generateLanguages();
 
-  let f = new FingerprintObject("Test", "Hallo ich bin cool");
-  let ranking = f.compareToOthers(LANGUAGES);
+  let f1 = new FingerprintObject(
+    "Test",
+    "Hallo ich bin cool du nicht, weil ich das nicht gut finde."
+  );
+  let f2 = new FingerprintObject(
+    "Test",
+    "I would really like to thank you for your help! You are a truely great companion"
+  );
+  let ranking = f1.compareToOthers(LANGUAGES);
   print(ranking);
+  print(f2.compareToOthers(LANGUAGES));
 }
