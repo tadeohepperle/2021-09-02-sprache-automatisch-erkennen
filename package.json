@@ -1,0 +1,21 @@
+{
+  "name": "2021-09-02-sprache-automatisch-erkennen",
+  "version": "1.0.0",
+  "description": "",
+  "main": "language_detector.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node --experimental-modules index.mjs"
+  },
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tadeohepperle/2021-09-02-sprache-automatisch-erkennen.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tadeohepperle/2021-09-02-sprache-automatisch-erkennen/issues"
+  },
+  "homepage": "https://github.com/tadeohepperle/2021-09-02-sprache-automatisch-erkennen#readme"
+}

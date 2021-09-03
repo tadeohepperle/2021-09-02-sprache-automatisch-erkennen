@@ -1,8 +1,24 @@
 source: Heinrich Heine Deutschland ein Wintermärchen.
 war aber zu lang daher nur das Vorwort dazu.
 
-
 --> DeepL übersetzen
 
 sprachen verwendet: __LISTE
 Lustig. Polish und Finnish beides verben im Englischen
+
+---
+
+zuerst alles in Python geschrieben aber das war zu dumm.
+Also alles umschreiben in Javascript. waren ja nur etwa 180 Zeilen.
+
+const print = console.log; für alle die console.log zu lange finden.
+
+let f = new Fingerprint("Test", "Hallo ich bin cool");
+print(f.fingerprint);
+
+---
+
+ähnlichkeit zwischen Sprachen berechnen möglich!!
+
+Diskussion: Warum gleiches Gewicht Wortlänge und jeder Buchstabe
+Was ist mit Buchstabenkombinationen
