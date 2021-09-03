@@ -22,18 +22,20 @@
       crossorigin="anonymous"
     ></script>
   </head>
-  <body>
+  <body class="bg-light">
     <div class="container">
-      <div class="p-5 bg-light shadow rounded">
-        <h1 class="display-3 text-center my-5">
-          Den Computer Sprachen erkennen lassen
+      <div class="bg-white p-5 shadow rounded mt-3">
+        <h1 class="display-3 text-center mb-5">
+          An Algorithm for Language Detection
         </h1>
         <figure class="text-center">
           <blockquote class="blockquote rounded bg-dark text-white p-3">
             <p>
-              Den Computer Sprachen erkennen zu lassen ist leichter als gedacht,
-              erfordert keine neuronalen Netzwerke und kann mit nur ca. 5000
-              Zeichen Trainingstext für jede Sprache erreicht werden.
+              Letting the computer recognize languages is easier than you think,
+              does not require neural networks and can be achieved with only
+              about 5000 characters of training text for each language. The
+              algorithm is purely based on letter frequencies and word length
+              distribution.
             </p>
           </blockquote>
         </figure>
@@ -41,23 +43,17 @@
       <div class="p-5">
         <form class="mb-2">
           <div class="form-group">
-            <label for="exampleFormControlTextarea1" class="mb-3"
-              >Gib einen Text ein:</label
-            >
-            <textarea
-              class="form-control"
-              id="exampleFormControlTextarea1"
-              rows="3"
-            ></textarea>
+            <label for="textarea1" class="mb-3">Enter a text:</label>
+            <textarea class="form-control" id="textarea1" rows="3"></textarea>
           </div>
         </form>
       </div>
-      <div class="bg-light p-5 shadow rounded">
-        <div style="max-width: 400px">
-          <canvas id="myChart" width="400" height="400"></canvas>
+      <div class="p-5 shadow rounded mb-5">
+        <div style="max-width: 600px">
+          <canvas id="myChart" width="800" height="800"></canvas>
         </div>
       </div>
     </div>
-    <script src="./index.js"></script>
+    <script type="module" src="./index.mjs"></script>
   </body>
 </html>

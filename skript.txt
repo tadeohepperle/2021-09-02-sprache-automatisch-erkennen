@@ -22,3 +22,7 @@ print(f.fingerprint);
 
 Diskussion: Warum gleiches Gewicht Wortlänge und jeder Buchstabe
 Was ist mit Buchstabenkombinationen
+
+--------------------------------------------
+Beispielinput:
+nous sommes les baguettes de paris!

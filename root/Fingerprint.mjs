@@ -10,7 +10,7 @@ String.prototype.reduceWhiteSpace = function () {
 
 const print = console.log;
 
-class FingerprintObject {
+export class FingerprintObject {
   fingerprint = {};
   language = "UNKNOWN";
   constructor(languageName, trainingText) {
@@ -121,7 +121,6 @@ class FingerprintObject {
 
 export async function main() {
   const LANGUAGES = generateLanguages();
-
   let f1 = new FingerprintObject(
     "Test",
     "Hallo ich bin cool du nicht, weil ich das nicht gut finde."
