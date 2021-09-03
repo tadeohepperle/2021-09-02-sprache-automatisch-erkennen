@@ -1,7 +1,10 @@
 import { trainingData } from "./data/trainingData.mjs";
+import { firstLetterUppercase } from "./utility.mjs";
 
 export function generateLanguages() {
-  return trainingData.map((el) => new FingerprintObject(el[0], el[1]));
+  return trainingData.map(
+    (el) => new FingerprintObject(firstLetterUppercase(el[0]), el[1])
+  );
 }
 
 String.prototype.reduceWhiteSpace = function () {

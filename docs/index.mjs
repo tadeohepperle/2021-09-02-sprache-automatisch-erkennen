@@ -1,17 +1,46 @@
-import { choose, shuffle, print, languageToColor } from "./utility.mjs";
+import {
+  choose,
+  shuffle,
+  print,
+  languageToColor,
+  firstLetterUppercase,
+} from "./utility.mjs";
 import { FingerprintObject, generateLanguages } from "./Fingerprint.mjs";
 // LOAD IN LANGUAGES:
 const LANGUAGES = generateLanguages();
 // ADD LISTENER TO TEXTAREA:
 let textarea1 = document.getElementById("textarea1");
+let languagelabel = document.getElementById("languagelabel");
 textarea1.addEventListener("input", (e) => {
   textInputChanged(e.target.value);
 });
 let startRanking = LANGUAGES.map((language) => [language.language, 0]);
 function textInputChanged(newTextInput) {
-  let inputFingerprint = new FingerprintObject("input", newTextInput);
-  let ranking = inputFingerprint.compareToOthers(LANGUAGES);
-  updateChart(ranking, myChart);
+  if (newTextInput != "") {
+    let inputFingerprint = new FingerprintObject("input", newTextInput);
+    let ranking = inputFingerprint.compareToOthers(LANGUAGES);
+    updateChart(ranking, myChart);
+    updateLanguageLabel(ranking);
+  } else {
+    updateChart(startRanking, myChart);
+    updateLanguageLabel(startRanking);
+  }
+}
+// UPDATE LANGUGE LABEL
+function updateLanguageLabel(ranking) {
+  function getWinningLanguageAndColor(ranking) {
+    if (ranking[0][1] == 0) {
+      return { language: "?????", color: languageToColor("?????", 0.8) };
+    } else
+      return {
+        language: ranking[0][0],
+        color: languageToColor(ranking[0][0], 0.8),
+      };
+  }
+
+  const { language, color } = getWinningLanguageAndColor(ranking);
+  languagelabel.style = `color: ${color}`;
+  languagelabel.innerHTML = firstLetterUppercase(language);
 }
 // DRAWING AND UPDATING THE CHART:
 function updateChart(ranking, chart) {
@@ -23,9 +52,6 @@ function updateChart(ranking, chart) {
     ds.borderColor = labels.map((l) => languageToColor(l, 1));
   });
   chart.update();
-  // //   chart.data.datasets.forEach(
-  // //     (ds) => (ds.data = [getNum(), getNum(), getNum(), getNum()])
-  // //   );
 }
 
 function rankingToLabelsAndScores(ranking) {
@@ -71,16 +97,3 @@ window.addEventListener("beforeprint", () => {
 window.addEventListener("afterprint", () => {
   myChart.resize();
 });
-
-// // function updateDataRandomly(chart) {
-// //   const getNum = () => Math.random() * 100;
-// //   chart.data.labels = shuffle(["A", "B", "C", "D"]);
-// //   chart.data.datasets.forEach(
-// //     (ds) => (ds.data = [getNum(), getNum(), getNum(), getNum()])
-// //   );
-// //   chart.update();
-// // }
-
-// // setInterval(() => {
-// //   updateDataRandomly(myChart);
-// // }, 2000);
