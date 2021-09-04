@@ -2,6 +2,12 @@
 
 **Available as website at: [https://tadeohepperle.github.io/2021-09-02-sprache-automatisch-erkennen/](https://tadeohepperle.github.io/2021-09-02-sprache-automatisch-erkennen/)**
 Letting the computer recognize languages is easier than you think, does not require neural networks and can be achieved with only about 5000 characters of training text for each language. The algorithm is purely based on letter frequencies and word length distribution.
+<a href="https://tadeohepperle.github.io/2021-09-02-sprache-automatisch-erkennen/">
+<img
+src="./docs/img/screenshot_prediction.png"
+style="max-width: 400px;"
+alt="Language Detector"
+ /></a>
 
 ## How does it work?
 
@@ -88,7 +94,7 @@ Unsing this simple algorithm we can also calculate similarities
 between languages. This table was calculated by just inputting
 the original training data for each language into the algorithm:
 <img
-                  src="./docs/img/language similarities.png"
-                  style="width: 100%;"
-                  alt="..."
-                />
+src="./docs/img/language similarities.png"
+style="width: 100%;"
+alt="..."
+ />
