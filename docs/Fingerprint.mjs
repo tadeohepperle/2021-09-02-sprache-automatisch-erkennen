@@ -46,6 +46,9 @@ export class FingerprintObject {
       if (key in wordLengthMap) wordLengthMap[key] += 1;
       else wordLengthMap[key] = 1;
     }
+    for (let key in wordLengthMap) {
+      wordLengthMap[key] /= wordArray.length;
+    }
     // merge letter frequencies and word lenghtes into fingerprint:
     let fingerprint = { ...wordLengthMap, ...letterMap };
     return fingerprint;

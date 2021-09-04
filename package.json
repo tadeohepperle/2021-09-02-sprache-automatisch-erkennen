@@ -5,7 +5,8 @@
   "main": "language_detector.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node --experimental-modules index.mjs"
+    "start": "node --experimental-modules language_similarities.mjs",
+    "t": "node --experimental-modules testfile.mjs"
   },
   "type": "module",
   "repository": {

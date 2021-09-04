@@ -25,4 +25,26 @@ Was ist mit Buchstabenkombinationen
 
 --------------------------------------------
 Beispielinput:
-nous sommes les baguettes de paris!
+Bonjour je veux une baguette avec fromage
+
+Hallo ich würde dir gerne einen Brief schreiben, weiß aber nicht, wie ich das am Besten anstellen soll.
+
+
+Teil der Despacito Lyrics:
+Tú, tú eres el imán y yo soy el metal
+Me voy acercando y voy armando el plan
+Solo con pensarlo se acelera el pulso
+
+
+Barack Obama scheint aus Polen zu kommen lol
+
+Fingerprint Example: 
+{
+  'wordLength_2': 47,
+  'wordLength_3': 227,
+  'wordLength_4': 58,
+  ...
+  'd': 0.05472752678155566,
+  'e': 0.17210060549604098,
+  'ä': 0.006287843502561714,
+}

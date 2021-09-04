@@ -87,7 +87,7 @@ export function languageToColor(language, opacity = 0.2) {
     // case "?????":
     //   return `rgba(______, ${opacity})`;
     default:
-      return `hsla(145, 145, 145, ${opacity})`;
+      return `hsla(217, 0%, 74%, ${opacity})`;
   }
 }
 

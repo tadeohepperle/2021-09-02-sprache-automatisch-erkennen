@@ -1055,83 +1055,83 @@ export const trainingData = [
     
   `,
   ],
-  // [
-  //   "vietnamese",
-  //   `Nước Đức. Một wintererstory.
+  [
+    "vietnamese",
+    `Nước Đức. Một wintererstory.
 
-  // Bài thơ sau đây tôi đã viết vào tháng một năm nay
-  // Paris, và không khí tự do của Village Weaver ở một số khổ thơ
-  // Sharper vào nó, khi tôi thực sự thích tôi. Tôi đã không gạch chân
-  // Đã giảm nhẹ và loại bỏ những gì về khí hậu của Đức
-  // Tăng. Tuy nhiên, khi tôi thảo luận trong
-  // Tháng March gửi đến nhà xuất bản của tôi đến Hamburg, tôi vẫn trở thành
-  // Mannigfachen đặt câu hỏi. tôi phải
-  // trải qua các cửa hàng gây tử vong của công việc một lần nữa, và nó có thể
-  // có lẽ đang xảy ra rằng những âm thanh nghiêm trọng đã chiến đấu hơn mức cần thiết
-  // Hoặc được cào bởi các kẹp của sự hài hước để thanh thản.
-  // Tôi có một số suy nghĩ trần trụi trong sự khó chịu vội vàng lá vả của họ
-  // một lần nữa phá hủy, và có lẽ tai giòn bất ngờ
-  // đau. Tôi xin lỗi, nhưng tôi tiêu thụ tôi với ý thức,
-  // mà các tác giả lớn hơn có những đường chuyền tương tự.
-  // Tôi không muốn đề cập đến các aristophanes với một sự nhợt nhạt như vậy,
-  // Bởi vì đó là một Heath mù quáng, và khán giả của ông đến Athens đã có
-  // Rất thích một nền giáo dục cổ điển, nhưng biết rất ít về đạo đức.
-  // Trên Cervantes và Molière, tôi đã có thể tốt hơn rất nhiều;
-  // Và trước đây đã viết cho sự cao quý cao của cả Castile, sau đó
-  // Đối với Vua lớn và sân lớn của Versailles! Ồ, tôi
-  // Quên rằng chúng ta đang sống trong một thời gian rất tư sản, và tôi thấy
-  // Thật không may, nhiều con gái của các quầy hàng có học thức trên Spree, nơi
-  // thậm chí không ở Alster, về bài thơ của tôi càng ít
-  // Hulls mũi Bent có được! Nhưng những gì tôi làm với nhiều hơn nữa
-  // Dự đoán dầu mỡ, đây là con tàu điện tử của những người pharise của
-  // Quốc tịch bây giờ với những động lực chống chịu của chính phủ trong tay
-  // Tay đi, cũng tận hưởng tình yêu đầy đủ và sự tôn trọng của kiểm duyệt
-  // và trong báo chí hàng ngày có thể chỉ định âm thanh nơi nó áp dụng, những người đó
-  // Đối thủ để chỉ huy, cũng đồng thời là đối thủ cao nhất của họ
-  // Lãnh chúa là. Chúng tôi đang chuẩn bị trong tim chống lại sự bất mãn
-  // LACKeys anh hùng này ở Schwarzrotgoldner livree. tôi nghe
-  // Đã là tiếng nói bia của họ: "Bạn thậm chí còn làm nổ ra màu sắc, rắc rối của chúng tôi
-  // của Tổ quốc, bạn của người Pháp, người mà bạn có rhine miễn phí
-  // Phá hủy! "Làm dịu bạn. Tôi sẽ chú ý đến màu sắc của bạn và
-  // danh dự nếu bạn xứng đáng với nó nếu bạn không còn nhàn rỗi hay
-  // Chơi taithtic là. Cây cờ vàng đỏ đen
-  // Số lượng suy nghĩ của Đức, làm cho bạn thành ngữ
-  // Menschtum, và tôi muốn cho máu trái tim tốt nhất cho bạn.
-  // Làm dịu bạn, tôi yêu Tổ quốc nhiều như bạn muốn. Tại vì
-  // Tôi đã dành ba tuổi bị lưu đày, và
-  // Vì Ebendies yêu, tôi trở về lưu vong, có lẽ
-  // Mãi mãi, ít nhất là không nổi hoặc bằng tốt nghiệp
-  // Để cắt giảm Duldergrimasse. Tôi là bạn của người Pháp, như
-  // Tôi là bạn của tất cả mọi người khi họ hợp lý và tốt
-  // và bởi vì tôi không quá ngu ngốc hoặc rất tệ đối với tôi
-  // Chúc người Đức và người Pháp của tôi, hai người
-  // Lựa chọn mọi người của nhân loại, cổ là tốt nhất
-  // của Anh và Nga và khả năng của tất cả những người khác bè và vỏ
-  // Quả cầu này. Hãy im lặng, tôi sẽ không bao giờ là người rhinemore
-  // Giải trí tiếng Pháp, đã từ lý do rất đơn giản: Bởi vì
-  // Rhine thuộc về. Vâng, anh ấy thuộc về tôi, thông qua sự sinh nhật không thể thay đổi,
-  // Tôi vẫn còn xa những con trai hàng hóa rhine miễn phí, tại bờ của mình
-  // Ở lại cái nôi của tôi, và tôi không thấy tại sao rhine
-  // Một trong những người khác nên thuộc về trẻ em quốc gia. Alsace và
-  // Tất nhiên, tôi không thể dễ dàng đến với Lorraine
-  // kết hợp, như bạn làm điều đó, bởi vì mọi người treo ở những vùng đất đó
-  // Lễ hội đến Pháp vì những quyền mà bạn thông qua người Pháp
-  // Lưu thông nhà nước đã giành được vì những luật bình đẳng và miễn phí
-  // Các tổ chức rất dễ chịu đối với Bourgeois, nhưng
-  // Vẫn còn nhiều điều để mong muốn dạ dày của số lượng lớn.
-  // Tâm trí, alsasser và lorrainers sẽ trở lại
-  // Đức kết nối nếu chúng ta hoàn thành những gì người Pháp
-  // bắt đầu, nếu chúng ta kết thúc những lời ngự này trong thực tế như chúng ta làm điều đó
-  // đã được thực hiện trong suy nghĩ, khi chúng ta nhận được kết luận cuối cùng
-  // của cùng, khi chúng ta làm kỷ nguyên cho đến khi họ
-  // Góc trượt cuối cùng, bầu trời, phá hủy khi chúng ta là Chúa,
-  // Sống trên trái đất ở người, cứu khỏi sự sỉ nhục của mình khi chúng ta
-  // Những người yên tâm của Thiên Chúa trở thành khi chúng ta là người nghèo, cười và
-  // thiên tài chế nhạo và vẻ đẹp trong hình trong cô ấy
-  // Sẽ sử dụng làm thế nào các bậc thầy vĩ đại của chúng tôi nói và hát và như thế nào
-  // Chúng tôi muốn nó, chúng tôi, trẻ hơn - có, không chỉ là Alsace và Lorraine,
-  // Nhưng hoàn toàn Pháp sẽ đến với chúng tôi bất cứ khi nào, khắp châu Âu,
-  // Gan.
-  // `,
-  // ],
+  Bài thơ sau đây tôi đã viết vào tháng một năm nay
+  Paris, và không khí tự do của Village Weaver ở một số khổ thơ
+  Sharper vào nó, khi tôi thực sự thích tôi. Tôi đã không gạch chân
+  Đã giảm nhẹ và loại bỏ những gì về khí hậu của Đức
+  Tăng. Tuy nhiên, khi tôi thảo luận trong
+  Tháng March gửi đến nhà xuất bản của tôi đến Hamburg, tôi vẫn trở thành
+  Mannigfachen đặt câu hỏi. tôi phải
+  trải qua các cửa hàng gây tử vong của công việc một lần nữa, và nó có thể
+  có lẽ đang xảy ra rằng những âm thanh nghiêm trọng đã chiến đấu hơn mức cần thiết
+  Hoặc được cào bởi các kẹp của sự hài hước để thanh thản.
+  Tôi có một số suy nghĩ trần trụi trong sự khó chịu vội vàng lá vả của họ
+  một lần nữa phá hủy, và có lẽ tai giòn bất ngờ
+  đau. Tôi xin lỗi, nhưng tôi tiêu thụ tôi với ý thức,
+  mà các tác giả lớn hơn có những đường chuyền tương tự.
+  Tôi không muốn đề cập đến các aristophanes với một sự nhợt nhạt như vậy,
+  Bởi vì đó là một Heath mù quáng, và khán giả của ông đến Athens đã có
+  Rất thích một nền giáo dục cổ điển, nhưng biết rất ít về đạo đức.
+  Trên Cervantes và Molière, tôi đã có thể tốt hơn rất nhiều;
+  Và trước đây đã viết cho sự cao quý cao của cả Castile, sau đó
+  Đối với Vua lớn và sân lớn của Versailles! Ồ, tôi
+  Quên rằng chúng ta đang sống trong một thời gian rất tư sản, và tôi thấy
+  Thật không may, nhiều con gái của các quầy hàng có học thức trên Spree, nơi
+  thậm chí không ở Alster, về bài thơ của tôi càng ít
+  Hulls mũi Bent có được! Nhưng những gì tôi làm với nhiều hơn nữa
+  Dự đoán dầu mỡ, đây là con tàu điện tử của những người pharise của
+  Quốc tịch bây giờ với những động lực chống chịu của chính phủ trong tay
+  Tay đi, cũng tận hưởng tình yêu đầy đủ và sự tôn trọng của kiểm duyệt
+  và trong báo chí hàng ngày có thể chỉ định âm thanh nơi nó áp dụng, những người đó
+  Đối thủ để chỉ huy, cũng đồng thời là đối thủ cao nhất của họ
+  Lãnh chúa là. Chúng tôi đang chuẩn bị trong tim chống lại sự bất mãn
+  LACKeys anh hùng này ở Schwarzrotgoldner livree. tôi nghe
+  Đã là tiếng nói bia của họ: "Bạn thậm chí còn làm nổ ra màu sắc, rắc rối của chúng tôi
+  của Tổ quốc, bạn của người Pháp, người mà bạn có rhine miễn phí
+  Phá hủy! "Làm dịu bạn. Tôi sẽ chú ý đến màu sắc của bạn và
+  danh dự nếu bạn xứng đáng với nó nếu bạn không còn nhàn rỗi hay
+  Chơi taithtic là. Cây cờ vàng đỏ đen
+  Số lượng suy nghĩ của Đức, làm cho bạn thành ngữ
+  Menschtum, và tôi muốn cho máu trái tim tốt nhất cho bạn.
+  Làm dịu bạn, tôi yêu Tổ quốc nhiều như bạn muốn. Tại vì
+  Tôi đã dành ba tuổi bị lưu đày, và
+  Vì Ebendies yêu, tôi trở về lưu vong, có lẽ
+  Mãi mãi, ít nhất là không nổi hoặc bằng tốt nghiệp
+  Để cắt giảm Duldergrimasse. Tôi là bạn của người Pháp, như
+  Tôi là bạn của tất cả mọi người khi họ hợp lý và tốt
+  và bởi vì tôi không quá ngu ngốc hoặc rất tệ đối với tôi
+  Chúc người Đức và người Pháp của tôi, hai người
+  Lựa chọn mọi người của nhân loại, cổ là tốt nhất
+  của Anh và Nga và khả năng của tất cả những người khác bè và vỏ
+  Quả cầu này. Hãy im lặng, tôi sẽ không bao giờ là người rhinemore
+  Giải trí tiếng Pháp, đã từ lý do rất đơn giản: Bởi vì
+  Rhine thuộc về. Vâng, anh ấy thuộc về tôi, thông qua sự sinh nhật không thể thay đổi,
+  Tôi vẫn còn xa những con trai hàng hóa rhine miễn phí, tại bờ của mình
+  Ở lại cái nôi của tôi, và tôi không thấy tại sao rhine
+  Một trong những người khác nên thuộc về trẻ em quốc gia. Alsace và
+  Tất nhiên, tôi không thể dễ dàng đến với Lorraine
+  kết hợp, như bạn làm điều đó, bởi vì mọi người treo ở những vùng đất đó
+  Lễ hội đến Pháp vì những quyền mà bạn thông qua người Pháp
+  Lưu thông nhà nước đã giành được vì những luật bình đẳng và miễn phí
+  Các tổ chức rất dễ chịu đối với Bourgeois, nhưng
+  Vẫn còn nhiều điều để mong muốn dạ dày của số lượng lớn.
+  Tâm trí, alsasser và lorrainers sẽ trở lại
+  Đức kết nối nếu chúng ta hoàn thành những gì người Pháp
+  bắt đầu, nếu chúng ta kết thúc những lời ngự này trong thực tế như chúng ta làm điều đó
+  đã được thực hiện trong suy nghĩ, khi chúng ta nhận được kết luận cuối cùng
+  của cùng, khi chúng ta làm kỷ nguyên cho đến khi họ
+  Góc trượt cuối cùng, bầu trời, phá hủy khi chúng ta là Chúa,
+  Sống trên trái đất ở người, cứu khỏi sự sỉ nhục của mình khi chúng ta
+  Những người yên tâm của Thiên Chúa trở thành khi chúng ta là người nghèo, cười và
+  thiên tài chế nhạo và vẻ đẹp trong hình trong cô ấy
+  Sẽ sử dụng làm thế nào các bậc thầy vĩ đại của chúng tôi nói và hát và như thế nào
+  Chúng tôi muốn nó, chúng tôi, trẻ hơn - có, không chỉ là Alsace và Lorraine,
+  Nhưng hoàn toàn Pháp sẽ đến với chúng tôi bất cứ khi nào, khắp châu Âu,
+  Gan.
+  `,
+  ],
 ];
