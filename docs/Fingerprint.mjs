@@ -52,7 +52,7 @@ export class FingerprintObject {
   }
 
   compareToOthers(otherFingerprintObjects) {
-    const INFINITY = 1000;
+    const INFINITY = 1000000;
     function getAllKeysFromFingerprints(fingerprints) {
       let d = {};
       for (let f of fingerprints) {
