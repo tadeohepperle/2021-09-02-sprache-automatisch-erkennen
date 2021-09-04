@@ -5,7 +5,7 @@ Letting the computer recognize languages is easier than you think, does not requ
 
 ## How does it work?
 
-              <ol>
+<ol>
                 <li>
                   <p>
                     Calculate fingerprint for traning text in each language. It
