@@ -5,9 +5,6 @@ Letting the computer recognize languages is easier than you think, does not requ
 
 ## How does it work?
 
-## Language Similarities
-
-<h3>How does it work?</h3>
               <ol>
                 <li>
                   <p>
@@ -84,3 +81,14 @@ Letting the computer recognize languages is easier than you think, does not requ
                   </p>
                 </li>
               </ol>
+
+## Language Similarities
+
+Unsing this simple algorithm we can also calculate similarities
+between languages. This table was calculated by just inputting
+the original training data for each language into the algorithm:
+<img
+                  src="./docs/img/language similarities.png"
+                  style="width: 100%;"
+                  alt="..."
+                />

@@ -56,7 +56,7 @@
             </div>
           </div>
           <div class="col-md-6 p-3">
-            <h2 class="mb-5">
+            <h2 class="py-3 mb-3 rounded">
               The text seems to be
               <b id="languagelabel" style="color: rgba(145, 145, 145, 0.8)"
                 >?????</b
@@ -129,8 +129,23 @@
                 <li>
                   <p>
                     For each language add up attribute similarities to get the
-                    score for this language. The language with the highest score
-                    is predicted to be the language of the input.
+                    score for this language.
+                  </p>
+                  <p>
+                    Example:<br />
+                    <code>
+                      lang1_score = attr1_similarity_lang1 +
+                      attr2_similarity_lang1 + attr3_similarity_lang1 + ...
+                      <br />
+                      <br />
+                      lang2_score = attr1_similarity_lang2 +
+                      attr2_similarity_lang2 + attr3_similarity_lang2 + ...
+                      <br />
+                    </code>
+                  </p>
+                  <p>
+                    The language with the highest score is predicted to be the
+                    language of the input.
                   </p>
                 </li>
                 <li>
@@ -140,7 +155,12 @@
                   </p>
                 </li>
               </ol>
-
+              <h3>Language Similarity</h3>
+              <p>
+                Unsing this simple algorithm we can also calculate similarities
+                between languages. This table was calculated by just inputting
+                the original training data for each language into the algorithm:
+              </p>
               <figure class="figure py-3 rounded">
                 <img
                   src="./img/language similarities.png"
