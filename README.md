@@ -1,4 +1,4 @@
-# A simple algorithm for language detection
+# A Simple Algorithm for Language Detection
 
 **Available as website at:**
 [tadeohepperle.github.io/2021-09-02-sprache-automatisch-erkennen/](https://tadeohepperle.github.io/2021-09-02-sprache-automatisch-erkennen/)
