@@ -1,7 +1,7 @@
 # A simple algorithm for language detection
 
-**Available as website at: [https://tadeohepperle.github.io/2021-09-02-sprache-automatisch-erkennen/](https://tadeohepperle.github.io/2021-09-02-sprache-automatisch-erkennen/)**
-Letting the computer recognize languages is easier than you think, does not require neural networks and can be achieved with only about 5000 characters of training text for each language. The algorithm is purely based on letter frequencies and word length distribution. The foreword of "Deutschland. Ein Wintermärchen" (Heinrich Heine, 1844) and translations of it by [https://www.deepl.com/](DeepL) were used as training text.<br><br>
+**Available as website at: [tadeohepperle.github.io/2021-09-02-sprache-automatisch-erkennen/](https://tadeohepperle.github.io/2021-09-02-sprache-automatisch-erkennen/)**
+Letting the computer recognize languages is easier than you think, does not require neural networks and can be achieved with only about 5000 characters of training text for each language. The algorithm is purely based on letter frequencies and word length distribution. The foreword of "Deutschland. Ein Wintermärchen" (Heinrich Heine, 1844) and translations of it by [DeepL](https://www.deepl.com/) were used as training text.<br><br>
 <a href="https://tadeohepperle.github.io/2021-09-02-sprache-automatisch-erkennen/">
 <img
 src="./docs/img/screenshot_prediction.png"
