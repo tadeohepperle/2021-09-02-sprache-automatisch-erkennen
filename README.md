@@ -16,7 +16,7 @@ alt="Language Detector"
 <ol>
                 <li>
                   <p>
-                    Calculate fingerprint for traning text in each language. It
+                    Calculate fingerprint for training text in each language. It
                     consists of about 40 attributes and will be used will look
                     like this:
                   </p>
@@ -39,7 +39,7 @@ alt="Language Detector"
                   <p>
                     Calculate attribute distances for each attribute between
                     input and each language. The attribute distance is just the
-                    ratio (>1) between input attribute and language attribute.
+                    ratio (always > 1) between input attribute and language attribute.
                     The attribute similarity is 1 divided by this attribute
                     distance.
                   </p>
